@@ -22,7 +22,7 @@ Performance and tooling for modded and vanilla networks:
 
 - [conduit](https://github.com/tame-gg/conduit) - Velocity-CTD proxy fork
 - [keila](https://github.com/tame-gg/keila) - Leaf/Paper performance server
-- [SilkMC](https://github.com/tame-gg/SilkMC) - Folia-based multithreaded server
+- [Silk](https://github.com/tame-gg/Silk) - Folia-based multithreaded server
 - [swordslauncher](https://github.com/tame-gg/swordslauncher) - Prism/MultiMC-lineage launcher
 - [Universe](https://github.com/tame-gg/Universe) - cluster orchestrator
 
