@@ -110,7 +110,7 @@ Flavor is in beta. Release tarballs for other Linux distributions, and how to ve
   </a>
 </p>
 
-[![Latest Lychee tag](https://img.shields.io/github/v/tag/tame-gg/lychee?sort=semver&include_prereleases&style=flat-square&label=latest%20tag&labelColor=15110A&color=E8B84A)](https://github.com/tame-gg/lychee/tags)
+[![Lychee release: coming soon](https://img.shields.io/badge/release-coming%20soon-E8B84A?style=flat-square&labelColor=15110A)](https://tame.gg/projects/lychee)
 [![Lychee stars](https://img.shields.io/github/stars/tame-gg/lychee?style=flat-square&labelColor=15110A&color=D9A63C)](https://github.com/tame-gg/lychee/stargazers)
 [![Lychee license](https://img.shields.io/github/license/tame-gg/lychee?style=flat-square&labelColor=15110A&color=C99530)](https://github.com/tame-gg/lychee/blob/main/LICENSE)
 
