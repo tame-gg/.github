@@ -60,27 +60,24 @@ This org also ships related work under the same brand: Minecraft server and prox
     </td>
   </tr>
   <tr>
+  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://tame.gg/projects/conduit">Conduit</a></h3>
       <p>Performance-focused fork of Velocity for modded Minecraft networks (NeoForge, Forge, Fabric).</p>
       <p><a href="https://tame.gg/projects/conduit">Project page</a> · <a href="https://github.com/tame-gg/conduit">Repo</a></p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/tame-gg/conduit-native">conduit-native</a></h3>
-      <p>An independent Minecraft proxy with its own protocol stack and selector-based relay, with ViaVersion bundled. Not a Velocity fork.</p>
-      <p><a href="https://github.com/tame-gg/conduit-native">Repo</a></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
       <h3><a href="https://koels.net">koels.net</a></h3>
       <p><a href="https://koels.net">koels.net</a></p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/tame-gg/homebrew-tap">homebrew-tap</a></h3>
       <p>Homebrew tap for tame-gg apps.</p>
       <pre><code>brew tap tame-gg/tap</code></pre>
     </td>
+    <td width="50%" valign="top"></td>
   </tr>
 </table>
 
@@ -93,6 +90,7 @@ This org also ships related work under the same brand: Minecraft server and prox
 - [swordslauncher](https://github.com/tame-gg/swordslauncher) — MultiMC / Prism fork launcher
 - [Universe](https://github.com/tame-gg/Universe) — single-JAR cluster orchestrator
 - [scoop-bucket](https://github.com/tame-gg/scoop-bucket) — Scoop bucket for Flavor
+- [conduit-native](https://github.com/tame-gg/conduit-native) — independent Minecraft proxy with its own protocol stack and ViaVersion bundled; not a Velocity fork
 
 <p align="center"><img alt="" src="./assets/divider.svg" width="100%"></p>
 
