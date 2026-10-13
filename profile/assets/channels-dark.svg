@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" fill="none" role="img" aria-label="Install channels: the tame-gg Homebrew tap carries Flavor, the Flavor desktop app, FreshLock and Powerflow, and the tame-gg Scoop bucket carries Flavor for Windows.">
+  <style>
+    svg { --bg:#0b0906;--raised:#15110A;--deep:#0D0B07;--border:#8C6217;--bo:.5;--line:#8C6217;--dot:#F3D58A;--fg:#f3ede2;--fg2:#F3D58A;--fg3:#D9A63C;--gold:#E8B84A;--h1:#F3D58A;--h2:#E8B84A;--h3:#D9A63C;--t1:#F3D58A;--t2:#E8B84A;--t3:#C99530;--glow:.22;--dots:.10 }
+    .lower { letter-spacing: .04em; }
+    .label { font: 600 15px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; letter-spacing: .14em; fill: var(--fg3); }
+    .chip-text { font: 600 14px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; letter-spacing: .1em; fill: var(--fg2); }
+    .name { font: 700 24px Georgia, 'Times New Roman', Times, serif; fill: var(--fg); }
+    .base { stroke: var(--line); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+    .planned { stroke: url(#planned); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1 11; fill: none; }
+    .tail, .head { fill: none; stroke-linecap: round; animation-timing-function: linear; animation-iteration-count: infinite; animation-duration: 8.0s; }
+    .tail { stroke: url(#heat); stroke-width: 4; stroke-dasharray: 150 4000; stroke-dashoffset: 152; opacity: .45; }
+    .head { stroke: url(#heat); stroke-width: 6; stroke-dasharray: 28 4000; stroke-dashoffset: 30; }
+    .stop { fill: var(--bg); stroke: var(--line); stroke-width: 3; }
+    .chip { fill: var(--raised); stroke: var(--line); stroke-width: 1.5; }
+    .lit { fill: none; stroke: var(--gold); stroke-width: 3; opacity: 0; animation: lit 8.0s ease-out infinite; }
+    .chip-lit { fill: none; stroke: var(--gold); stroke-width: 1.5; opacity: 0; animation: lit 8.0s ease-out infinite; }
+    .breathe { animation: breathe 6s ease-in-out infinite; }
+    @keyframes lit { 0% { opacity: 1; } 18%, 100% { opacity: 0; } }
+    @keyframes breathe { 0%, 100% { opacity: .75; } 50% { opacity: 1; } }
+    @keyframes h1 { 0% { stroke-dashoffset: 30; } 47.3%, 100% { stroke-dashoffset: -1029.3; } }
+    @keyframes t1 { 0% { stroke-dashoffset: 152; } 52.7%, 100% { stroke-dashoffset: -1029.3; } }
+    @keyframes h2 { 0% { stroke-dashoffset: 30; } 47.3%, 100% { stroke-dashoffset: -1029.3; } }
+    @keyframes t2 { 0% { stroke-dashoffset: 152; } 52.7%, 100% { stroke-dashoffset: -1029.3; } }
+    @media (prefers-reduced-motion: reduce) { .tail, .head { display: none; } .lit, .chip-lit, .breathe { animation: none; } }
+  </style>
+  <defs>
+    <linearGradient id="heat" x1="80" y1="0" x2="1120" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color: var(--h1)"/><stop offset=".5" style="stop-color: var(--h2)"/><stop offset="1" style="stop-color: var(--h3)"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color: var(--t1)"/><stop offset=".55" style="stop-color: var(--t2)"/><stop offset="1" style="stop-color: var(--t3)"/>
+    </linearGradient>
+    <linearGradient id="planned" x1="232" y1="0" x2="860" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color: var(--line)"/><stop offset="1" style="stop-color: var(--line); stop-opacity: 0"/>
+    </linearGradient>
+    <clipPath id="panel"><rect width="1200" height="240" rx="16"/></clipPath>
+    <radialGradient id="glow" cx="1" cy="0" r="1" gradientTransform="matrix(.75 0 0 1 .25 0)">
+      <stop offset="0" style="stop-color: #E8B84A; stop-opacity: var(--glow)"/><stop offset="1" stop-color="#E8B84A" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect x="11" y="11" width="2" height="2" transform="rotate(45 12 12)" style="fill: var(--dot)"/>
+    </pattern>
+    <radialGradient id="fade" cx=".85" cy=".1" r=".65"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <mask id="fade-mask"><rect width="1200" height="240" fill="url(#fade)"/></mask>
+    
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect width="1200" height="240" style="fill: var(--bg)"/>
+    <rect class="breathe" width="1200" height="240" fill="url(#glow)"/>
+    <rect width="1200" height="240" fill="url(#dots)" style="opacity: var(--dots)" mask="url(#fade-mask)"/>
+  </g>
+  <rect x=".75" y=".75" width="1198.5" height="238.5" rx="15.25" fill="none" style="stroke: var(--border); stroke-opacity: var(--bo)" stroke-width="1.5"/>
+
+  <text class="label" x="80" y="56" text-anchor="start">INSTALL CHANNELS</text>
+  <path class="base" d="M80 152L152 152Q168 152 181.9 144L223.4 120Q237.3 112 253.3 112L1100 112"/>
+  <path class="base" d="M80 152L152 152Q168 152 181.9 160L223.4 184Q237.3 192 253.3 192L1100 192"/>
+  <path class="tail" style="animation-name: t1;" d="M80 152L152 152Q168 152 181.9 144L223.4 120Q237.3 112 253.3 112L1100 112"/>
+  <path class="head" style="animation-name: h1;" d="M80 152L152 152Q168 152 181.9 144L223.4 120Q237.3 112 253.3 112L1100 112"/>
+  <path class="tail" style="animation-name: t2; animation-delay: 0.60s;" d="M80 152L152 152Q168 152 181.9 160L223.4 184Q237.3 192 253.3 192L1100 192"/>
+  <path class="head" style="animation-name: h2; animation-delay: 0.60s;" d="M80 152L152 152Q168 152 181.9 160L223.4 184Q237.3 192 253.3 192L1100 192"/>
+  <circle class="stop" cx="80" cy="152" r="11"/>
+  <circle class="lit" cx="80" cy="152" r="11" style="animation-delay: 0.05s"/>
+  <text class="label lower" x="272" y="94" text-anchor="start">brew tap tame-gg/tap</text>
+  <text class="label lower" x="272" y="174" text-anchor="start">scoop bucket add tame-gg</text>
+  <rect class="chip" x="512" y="97" width="88.8" height="30" rx="7"/>
+  <rect class="chip-lit" x="512" y="97" width="88.8" height="30" rx="7" style="animation-delay: 3.68s"/>
+  <text class="chip-text" x="556.4" y="117" text-anchor="middle">FLAVOR</text>
+  <rect class="chip" x="616.8" y="97" width="167.2" height="30" rx="7"/>
+  <rect class="chip-lit" x="616.8" y="97" width="167.2" height="30" rx="7" style="animation-delay: 3.68s"/>
+  <text class="chip-text" x="700.4" y="117" text-anchor="middle">FLAVOR-DESKTOP</text>
+  <rect class="chip" x="800" y="97" width="118.2" height="30" rx="7"/>
+  <rect class="chip-lit" x="800" y="97" width="118.2" height="30" rx="7" style="animation-delay: 3.68s"/>
+  <text class="chip-text" x="859.1" y="117" text-anchor="middle">FRESHLOCK</text>
+  <rect class="chip" x="934.2" y="97" width="118.2" height="30" rx="7"/>
+  <rect class="chip-lit" x="934.2" y="97" width="118.2" height="30" rx="7" style="animation-delay: 3.68s"/>
+  <text class="chip-text" x="993.3" y="117" text-anchor="middle">POWERFLOW</text>
+  <rect class="chip" x="624" y="177" width="88.8" height="30" rx="7"/>
+  <rect class="chip-lit" x="624" y="177" width="88.8" height="30" rx="7" style="animation-delay: 4.28s"/>
+  <text class="chip-text" x="668.4" y="197" text-anchor="middle">FLAVOR</text>
+  <circle class="stop" cx="1100" cy="112" r="9"/>
+  <circle class="lit" cx="1100" cy="112" r="9" style="animation-delay: 3.68s"/>
+  <circle class="stop" cx="1100" cy="192" r="9"/>
+  <circle class="lit" cx="1100" cy="192" r="9" style="animation-delay: 4.28s"/>
+</svg>

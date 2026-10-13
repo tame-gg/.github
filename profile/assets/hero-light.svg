@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" fill="none" role="img" aria-label="tame.gg: Minecraft server software, Hypixel stats and everyday tools. Lines run from one tame.gg hub to five projects that light up in turn: tame.gg/stats for Hypixel stats, Flavor for Tailscale and Headscale networks, Lychee for downloads, Silk for Minecraft servers and Conduit, a Velocity-CTD proxy. Dotted lines lead to more projects.">
+  <style>
+    svg { --bg:#f3ede2;--raised:#fbf8f2;--deep:#efe7d6;--border:#C99530;--bo:.6;--line:#D9A63C;--dot:#8C6217;--fg:#8C6217;--fg2:#8C6217;--fg3:#8C6217;--gold:#8C6217;--h1:#C99530;--h2:#8C6217;--h3:#8C6217;--t1:#C99530;--t2:#8C6217;--t3:#8C6217;--glow:.18;--dots:.12 }
+    .label { font: 600 15px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; letter-spacing: .14em; fill: var(--fg3); }
+    .chip-text { font: 600 14px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; letter-spacing: .1em; fill: var(--fg2); }
+    .name { font: 700 24px Georgia, 'Times New Roman', Times, serif; fill: var(--fg); }
+    .base { stroke: var(--line); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+    .planned { stroke: url(#planned); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1 11; fill: none; }
+    .tail, .head { fill: none; stroke-linecap: round; animation-timing-function: linear; animation-iteration-count: infinite; animation-duration: 8.0s; }
+    .tail { stroke: url(#heat); stroke-width: 4; stroke-dasharray: 150 4000; stroke-dashoffset: 152; opacity: .45; }
+    .head { stroke: url(#heat); stroke-width: 6; stroke-dasharray: 28 4000; stroke-dashoffset: 30; }
+    .stop { fill: var(--bg); stroke: var(--line); stroke-width: 3; }
+    .chip { fill: var(--raised); stroke: var(--line); stroke-width: 1.5; }
+    .lit { fill: none; stroke: var(--gold); stroke-width: 3; opacity: 0; animation: lit 8.0s ease-out infinite; }
+    .chip-lit { fill: none; stroke: var(--gold); stroke-width: 1.5; opacity: 0; animation: lit 8.0s ease-out infinite; }
+    .breathe { animation: breathe 6s ease-in-out infinite; }
+    @keyframes lit { 0% { opacity: 1; } 18%, 100% { opacity: 0; } }
+    @keyframes breathe { 0%, 100% { opacity: .75; } 50% { opacity: 1; } }
+    @keyframes h1 { 0% { stroke-dashoffset: 30; } 35.4%, 100% { stroke-dashoffset: -764; } }
+    @keyframes t1 { 0% { stroke-dashoffset: 152; } 40.9%, 100% { stroke-dashoffset: -764; } }
+    @keyframes h2 { 0% { stroke-dashoffset: 30; } 35.0%, 100% { stroke-dashoffset: -753.3; } }
+    @keyframes t2 { 0% { stroke-dashoffset: 152; } 40.4%, 100% { stroke-dashoffset: -753.3; } }
+    @keyframes h3 { 0% { stroke-dashoffset: 30; } 34.6%, 100% { stroke-dashoffset: -744; } }
+    @keyframes t3 { 0% { stroke-dashoffset: 152; } 40.0%, 100% { stroke-dashoffset: -744; } }
+    @keyframes h4 { 0% { stroke-dashoffset: 30; } 35.0%, 100% { stroke-dashoffset: -753.3; } }
+    @keyframes t4 { 0% { stroke-dashoffset: 152; } 40.4%, 100% { stroke-dashoffset: -753.3; } }
+    @keyframes h5 { 0% { stroke-dashoffset: 30; } 35.4%, 100% { stroke-dashoffset: -764; } }
+    @keyframes t5 { 0% { stroke-dashoffset: 152; } 40.9%, 100% { stroke-dashoffset: -764; } }
+    @media (prefers-reduced-motion: reduce) { .tail, .head { display: none; } .lit, .chip-lit, .breathe { animation: none; } }
+  </style>
+  <defs>
+    <linearGradient id="heat" x1="80" y1="0" x2="1120" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color: var(--h1)"/><stop offset=".5" style="stop-color: var(--h2)"/><stop offset="1" style="stop-color: var(--h3)"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color: var(--t1)"/><stop offset=".55" style="stop-color: var(--t2)"/><stop offset="1" style="stop-color: var(--t3)"/>
+    </linearGradient>
+    <linearGradient id="planned" x1="232" y1="0" x2="860" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color: var(--line)"/><stop offset="1" style="stop-color: var(--line); stop-opacity: 0"/>
+    </linearGradient>
+    <clipPath id="panel"><rect width="1200" height="540" rx="16"/></clipPath>
+    <radialGradient id="glow" cx="1" cy="0" r="1" gradientTransform="matrix(.75 0 0 1 .25 0)">
+      <stop offset="0" style="stop-color: #E8B84A; stop-opacity: var(--glow)"/><stop offset="1" stop-color="#E8B84A" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect x="11" y="11" width="2" height="2" transform="rotate(45 12 12)" style="fill: var(--dot)"/>
+    </pattern>
+    <radialGradient id="fade" cx=".85" cy=".1" r=".65"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <mask id="fade-mask"><rect width="1200" height="540" fill="url(#fade)"/></mask>
+    
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect width="1200" height="540" style="fill: var(--bg)"/>
+    <rect class="breathe" width="1200" height="540" fill="url(#glow)"/>
+    <rect width="1200" height="540" fill="url(#dots)" style="opacity: var(--dots)" mask="url(#fade-mask)"/>
+  </g>
+  <rect x=".75" y=".75" width="1198.5" height="538.5" rx="15.25" fill="none" style="stroke: var(--border); stroke-opacity: var(--bo)" stroke-width="1.5"/>
+
+  <g transform="translate(104 108) rotate(45)"><rect x="-17" y="-17" width="34" height="34" rx="4.1" fill="url(#title)"/><rect x="-8.5" y="-8.5" width="17" height="17" rx="2" style="fill: var(--bg)" opacity=".55"/></g>
+  <text x="140" y="132" style="font: 700 76px Georgia, 'Times New Roman', Times, serif; letter-spacing: .01em" fill="url(#title)">tame.gg</text>
+  <text x="80" y="202" style="font: 400 27px Georgia, 'Times New Roman', Times, serif; fill: var(--fg2)">Minecraft server software, Hypixel stats, and tools for the everyday.</text>
+  <text class="label" x="1120" y="104" text-anchor="end">STATS · SERVERS · APPS</text>
+  <path class="base" d="M96 348L216 348Q232 348 245.9 340L356.7 276Q370.6 268 386.6 268L840 268"/>
+  <path class="base" d="M96 348L216 348Q232 348 245.9 340L287.4 316Q301.3 308 317.3 308L840 308"/>
+  <path class="base" d="M96 348L840 348"/>
+  <path class="base" d="M96 348L216 348Q232 348 245.9 356L287.4 380Q301.3 388 317.3 388L840 388"/>
+  <path class="base" d="M96 348L216 348Q232 348 245.9 356L356.7 420Q370.6 428 386.6 428L840 428"/>
+  <path class="planned" d="M232 348L426 460Q439.8 468 455.8 468L820 468"/>
+  <path class="planned" d="M232 348L481.4 492Q495.3 500 511.3 500L760 500"/>
+  <path class="tail" style="animation-name: t1;" d="M96 348L216 348Q232 348 245.9 340L356.7 276Q370.6 268 386.6 268L840 268"/>
+  <path class="head" style="animation-name: h1;" d="M96 348L216 348Q232 348 245.9 340L356.7 276Q370.6 268 386.6 268L840 268"/>
+  <path class="tail" style="animation-name: t2; animation-delay: 0.45s;" d="M96 348L216 348Q232 348 245.9 340L287.4 316Q301.3 308 317.3 308L840 308"/>
+  <path class="head" style="animation-name: h2; animation-delay: 0.45s;" d="M96 348L216 348Q232 348 245.9 340L287.4 316Q301.3 308 317.3 308L840 308"/>
+  <path class="tail" style="animation-name: t3; animation-delay: 0.90s;" d="M96 348L840 348"/>
+  <path class="head" style="animation-name: h3; animation-delay: 0.90s;" d="M96 348L840 348"/>
+  <path class="tail" style="animation-name: t4; animation-delay: 1.35s;" d="M96 348L216 348Q232 348 245.9 356L287.4 380Q301.3 388 317.3 388L840 388"/>
+  <path class="head" style="animation-name: h4; animation-delay: 1.35s;" d="M96 348L216 348Q232 348 245.9 356L287.4 380Q301.3 388 317.3 388L840 388"/>
+  <path class="tail" style="animation-name: t5; animation-delay: 1.80s;" d="M96 348L216 348Q232 348 245.9 356L356.7 420Q370.6 428 386.6 428L840 428"/>
+  <path class="head" style="animation-name: h5; animation-delay: 1.80s;" d="M96 348L216 348Q232 348 245.9 356L356.7 420Q370.6 428 386.6 428L840 428"/>
+  <circle class="stop" cx="96" cy="348" r="13"/>
+  <circle class="lit" cx="96" cy="348" r="13" style="animation-delay: 0.05s"/>
+  <text class="label" x="80" y="318" text-anchor="start">TAME.GG</text>
+  <rect class="chip" x="550.7" y="253" width="98.6" height="30" rx="7"/>
+  <rect class="chip-lit" x="550.7" y="253" width="98.6" height="30" rx="7" style="animation-delay: 2.73s"/>
+  <text class="chip-text" x="600" y="273" text-anchor="middle">HYPIXEL</text>
+  <circle class="stop" cx="840" cy="268" r="9"/>
+  <circle class="lit" cx="840" cy="268" r="9" style="animation-delay: 2.73s"/>
+  <text class="name" x="866" y="276">tame.gg/stats</text>
+  <text class="label" x="1120" y="274" text-anchor="end">STATS</text>
+  <rect class="chip" x="540.9" y="293" width="118.2" height="30" rx="7"/>
+  <rect class="chip-lit" x="540.9" y="293" width="118.2" height="30" rx="7" style="animation-delay: 3.14s"/>
+  <text class="chip-text" x="600" y="313" text-anchor="middle">TAILSCALE</text>
+  <circle class="stop" cx="840" cy="308" r="9"/>
+  <circle class="lit" cx="840" cy="308" r="9" style="animation-delay: 3.14s"/>
+  <text class="name" x="866" y="316">Flavor</text>
+  <text class="label" x="1120" y="314" text-anchor="end">TAILNETS</text>
+  <rect class="chip" x="516.4" y="333" width="167.2" height="30" rx="7"/>
+  <rect class="chip-lit" x="516.4" y="333" width="167.2" height="30" rx="7" style="animation-delay: 3.56s"/>
+  <text class="chip-text" x="600" y="353" text-anchor="middle">HTTP · TORRENT</text>
+  <circle class="stop" cx="840" cy="348" r="9"/>
+  <circle class="lit" cx="840" cy="348" r="9" style="animation-delay: 3.56s"/>
+  <text class="name" x="866" y="356">Lychee</text>
+  <text class="label" x="1120" y="354" text-anchor="end">DOWNLOADS</text>
+  <rect class="chip" x="560.5" y="373" width="79" height="30" rx="7"/>
+  <rect class="chip-lit" x="560.5" y="373" width="79" height="30" rx="7" style="animation-delay: 4.04s"/>
+  <text class="chip-text" x="600" y="393" text-anchor="middle">FOLIA</text>
+  <circle class="stop" cx="840" cy="388" r="9"/>
+  <circle class="lit" cx="840" cy="388" r="9" style="animation-delay: 4.04s"/>
+  <text class="name" x="866" y="396">Silk</text>
+  <text class="label" x="1120" y="394" text-anchor="end">SERVER</text>
+  <rect class="chip" x="526.2" y="413" width="147.6" height="30" rx="7"/>
+  <rect class="chip-lit" x="526.2" y="413" width="147.6" height="30" rx="7" style="animation-delay: 4.53s"/>
+  <text class="chip-text" x="600" y="433" text-anchor="middle">VELOCITY-CTD</text>
+  <circle class="stop" cx="840" cy="428" r="9"/>
+  <circle class="lit" cx="840" cy="428" r="9" style="animation-delay: 4.53s"/>
+  <text class="name" x="866" y="436">Conduit</text>
+  <text class="label" x="1120" y="434" text-anchor="end">PROXY</text>
+  <text class="label" x="830" y="474" text-anchor="start">MORE AT TAME.GG/PROJECTS</text>
+</svg>
