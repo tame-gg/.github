@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="24" viewBox="0 0 1200 24" role="img" aria-label="divider">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C99530" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#E8B84A"/>
+      <stop offset="1" stop-color="#C99530" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F3D58A" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#F3D58A"/>
+      <stop offset="1" stop-color="#F3D58A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .glint { animation: run 4.5s ease-in-out infinite; }
+    .gem { animation: shine 3s ease-in-out infinite; transform-origin: 600px 12px; }
+    @keyframes run { 0% { transform: translateX(-160px); opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { transform: translateX(1200px); opacity: 0; } }
+    @keyframes shine { 0%,100% { opacity: .7; transform: rotate(45deg) scale(1); } 50% { opacity: 1; transform: rotate(45deg) scale(1.25); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect x="0" y="11.5" width="1200" height="1" fill="url(#line)"/>
+  <rect class="glint" x="0" y="11" width="160" height="2" fill="url(#glint)"/>
+  <rect class="gem" x="595" y="7" width="10" height="10" fill="#E8B84A" transform="rotate(45 600 12)"/>
+</svg>
